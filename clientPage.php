@@ -10,7 +10,7 @@
 				<div class="textArea">
 					<h2>Earthware Skincare</h2>
 					<p>
-						Earthware skin care is a small irish business
+						<h1>Earthware</h1> skin care is a small irish business
 						focused on the creation of toxin free
 						ethical skincare products
 					</p>
@@ -22,6 +22,6 @@
 			</div>
 			<img class="ewscImg" src="assets/browserEwsc.png">
 		</div><!--- #service-content-container --->
-	
+
 	</div>
 <?php include("Includes/footer.php"); ?>
