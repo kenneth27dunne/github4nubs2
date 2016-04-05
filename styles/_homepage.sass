@@ -1,0 +1,378 @@
+//header
+.head-container
+  overflow: hidden
+  height: 100vh
+  width: 100%
+  background: 
+    image: url("../assets/background/8.jpg")
+    size: cover
+    position: top center
+    repeat: no-repeat
+    attachment: fixed
+  padding: 0
+  margin: 0
+  position: relative
+  +overlay(0.5, #000)
+  .site-logo
+    position: relative
+    float: left
+    margin: 0px 0px 0px 70px
+    height: 72px
+    width: 120px
+    background:
+      image: url("../assets/PNG-Transparent-W.png")
+      size: contain
+      position: center center
+      repeat: no-repeat
+    clear: both
+  nav
+    position: relative
+    float: right
+    margin: 21px 70px 0px 0px
+    a
+      display: inline-block
+      padding: 6px
+      font-size: 16px
+      color: #fff
+      text-decoration: none
+    a:hover
+      color: #EA7F00//#fff//$font-color
+      border-bottom: 2px solid #EA7F00
+  .hero-text
+    position: relative
+    top: 28%
+    h1
+      clear: both
+      text-align: center
+      margin-bottom: 0
+      padding-bottom: 0
+      
+      span
+        display: inline-block
+        line-height: 1.5em
+        padding: 0 10px
+        border: 4px solid #fff   
+        font: 
+          size: 8.2vmin
+          weight: 700
+          family: "OpenSans-SemiBold"
+        color: #fff
+        text-transform: uppercase
+        letter-spacing: 0.15em
+        
+    p 
+      text-align: center
+      letter-spacing: 0.15em
+      color: #fff
+      font-size: 6vmin
+      margin-top: 0 
+      padding-top: 13px
+
+//sign up    
+.signup-container
+  display: none
+  min-height: 175px
+  background: rgba(212, 135, 41,0.77)
+  text-align: center
+  color: #fff
+  padding: 20px
+  p
+    max-width: 590px
+    margin: auto
+    padding: 20px 0
+  input
+    font-family: "OpenSans-Light"
+    padding: 15px
+    font-size: 14px
+  input[type="text"].signup-email
+    width: 225px
+    margin-right: 20px
+  input[type="submit"].signup-submit
+    border: none
+    color: #fff
+    background-color: $accent
+  .signup-form
+    position: relative
+    transition: all ease
+    
+//services
+.services-container
+  padding: 50px 30px
+  text-align: center
+  //border-top: 8px solid #d27303
+  color: $font-color
+  overflow: auto
+  h2
+    color: $accent
+  .service-widget-area
+    max-width: 940px
+    margin: auto
+    padding-top: 50px
+    
+    .service-widget
+      width: 195px
+      position: relative
+      padding: 0 20px
+      font-size: 14px
+      color: $font-color
+      float: left
+      opacity: 0
+      transform: translateY(50px)
+      transition: all 0.4s ease-in-out
+      &.isShowing
+        opacity: 1
+        transform: translateY(0px)
+      p
+        line-height: 2
+      .icon
+        margin: 25px auto      
+        border-radius: 50%
+        border: 1px solid $font-color
+        height: 115px
+        width: 115px
+        opacity: 0.5
+        background:
+          repeat: no-repeat
+          position: center center
+      .wordpress
+        background:
+          image: url("../assets/icons/blogger.png")
+      .eCommerce
+        background:
+          image: url("../assets/icons/shopping88.png")
+      .web-design
+        background:
+          image: url("../assets/icons/website8.png")
+      .support  
+        background:
+          image: url("../assets/icons/people.png")
+      button
+        font
+          family: "OpenSans-Light"
+          size: 14px
+        padding: 8px 15px
+        background: transparent
+        border: 1px solid #b7b7b7
+        color: $font-color
+        margin-top: 25px
+        cursor: pointer
+// clients
+
+.client-container
+  padding: 50px 0
+  text-align: center
+  border-bottom: 1px solid #FAFAFA
+  min-height: 100px
+  background-image: url("../assets/background/bg-2.jpg")
+  background-repeat: no-repeat 
+  background-position: center center 
+  background-size: cover 
+  +overlay(0.4, #000)
+  .design-title
+    color: #fff
+    margin-top: -20px
+  .client-area
+    max-width: 605px
+    //min-height: 90px
+    margin: 30px auto 0 auto 
+    position: relative
+    .client-icon-area
+      max-height: 150px
+      margin: auto
+      display: flex
+      justify-content: space-around
+      .item
+        margin: auto
+        overflow: hidden
+        max-width: 755px
+        white-space: nowrap
+        img
+          cursor: pointer
+          height: 80px 
+          width: auto
+        img:hover
+          -webkit-filter: grayscale(100%)
+          filter: grayscale(100%)
+      .earthware, .kickstart
+        img
+          //height: 90px
+    .client-nav
+      position: absolute
+      top: 0
+      text-decoration: none!important
+      z-index: 2
+      cursor: pointer
+      height: 50px
+      font:
+        family: "OpenSans-Light"
+        size: 100px
+      color: #fff
+    .client-left
+      left: 0
+    .client-right
+      right: 0 
+  
+// responsive section
+.responsive-area-container
+  text-align: center
+  background-color: #FAFAFA
+  overflow: auto
+  padding: 60px 20px
+  color: #373636
+  .inner-responsive-container
+    margin: 0px auto
+    max-width: 905px
+  h2
+    padding-bottom: 15px
+  .desktop-area
+    text-align: left
+    max-width: 905px
+    padding: 50px 0
+    margin: auto    
+    position: relative
+    .desktop-text
+      max-width: 50%
+      padding: 0
+      margin: 0
+      float: left
+    .desktop-img
+      margin: 0
+      padding: 0
+      float: right
+      img
+        width: 310px
+    p
+      text-align: center
+  .mobile-area
+    clear: both
+    padding: 50px 0
+    text-align: left
+    max-width: 905px
+    margin: auto    
+    position: relative
+    .mobile-text
+      max-width: 50%
+      padding: 0
+      margin: 0
+      float: right
+    .mobile-img
+      margin: 0
+      padding: 0
+      float: left
+    p
+      text-align: center
+ 
+//request area
+
+.request-quote-container
+  text-align: center 
+  padding: 50px 0
+  background:
+    image: url(../assets/background/bg-3.jpg)
+    size: contain
+    position: center
+  h2
+    color: #fff
+    margin-bottom: 50px
+  textarea
+    border: 1px solid $accent
+    clear: both
+    width: 440px
+    height: 130px
+    padding: 3px 10px
+    margin-top: 15px
+  input[type="text"], input[type="email"]
+    border: 1px solid $accent
+    width: 200px
+    padding: 3px 10px
+  input[type="text"]
+    margin-right: 10px 
+  div
+    text-align: right
+    max-width: 460px
+    width: 95%
+    margin: auto
+    input[type="submit"]
+      color: #fff
+      padding: 5px 10px
+      margin-top: 20px
+      background-color: $accent
+      border: none
+      font:
+        family: "OpenSans-Reg"
+        size: 20px
+
+// Footer
+.footer-container
+  position: relative
+  padding: 50px 70px
+  //border-top: 8px solid #d27303
+  overflow: auto
+  color: #fff
+  background:
+    color: #222
+  #googleMap
+    margin-top: 10px
+  .copyrightContainer
+    color: $font-color
+    position: relative
+    bottom: -20px
+    margin-top: 50px
+    padding-top: 5px
+    border-top: 1px solid #353535
+    font:
+      size: 12px
+    text-align: right
+  .inner-footer-container
+    display: -webkit-flex
+    display: flex
+    -webkit-flex-direction: row
+    flex-direction: row
+    -webkit-justify-content: space-around
+    justify-content: space-around
+    margin: auto
+    h1
+      color: $accent
+      font-weight: 100
+      font-family: "OpenSans-Light"
+      font-size: 24px
+      padding-bottom: 15px
+    ul li 
+      list-style: none
+      a
+        font:
+          weight: 100
+          family: "OpenSans-Light"
+          size: 14px
+      a:hover
+        text-decoration: underline
+        color: $accent
+    img
+      width: 250px
+      opacity: 0.7
+    .footer-content
+      display: -webkit-flex
+      display: flex
+      -webkit-flex-direction: row
+      flex-direction: row
+      -webkit-justify-content: space-around
+      justify-content: space-around
+      -webkit-flex-grow: 1
+      flex-grow: 1
+    .footer-item.socialMedia
+      display: -webkit-flex
+      display: flex
+      align-items: center
+      border-right: 1px solid #353535
+      padding-right: 4.5%
+      .innerSocial
+        text-align: center
+        .socialMediaIcons
+          padding-top: 15px
+          display: -webkit-flex
+          display: flex
+          -webkit-justify-content: space-around
+          justify-content: space-around
+          .icon
+            img
+              width: 60px

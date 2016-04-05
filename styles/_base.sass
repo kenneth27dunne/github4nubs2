@@ -1,0 +1,99 @@
+//variables
+$accent: #d27303
+$font-color: #696969
+
+.design-title
+  color: $accent
+  margin-bottom: 30px
+  font:
+    weight: 100
+    family: "OpenSans-Light"
+    size: 43px
+
+
+// mixins
+=overlay($opacity, $color)
+  >*
+    position: relative
+    z-index: 1
+  &.overlay
+    position: relative
+  &.overlay:before
+    position: absolute
+    top: 0
+    content: ''
+    z-index: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: $color
+    opacity: $opacity
+
+=gradient()
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#888c89+0,ffeed3+26,ffeed3+26,ffeed3+29,ffeed3+100 */
+  background: rgb(136,140,137)  /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(136,140,137,1) 0%, rgba(255,238,211,1) 26%, rgba(255,238,211,1) 26%, rgba(255,238,211,1) 29%, rgba(255,238,211,1) 100%)  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(136,140,137,1) 0%,rgba(255,238,211,1) 26%,rgba(255,238,211,1) 26%,rgba(255,238,211,1) 29%,rgba(255,238,211,1) 100%)  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(136,140,137,1) 0%,rgba(255,238,211,1) 26%,rgba(255,238,211,1) 26%,rgba(255,238,211,1) 29%,rgba(255,238,211,1) 100%)  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#888c89', endColorstr='#ffeed3',GradientType=1 )  /* IE6-9 */
+
+
+//fonts
+@font-face
+  font-family: "OpenSans-Reg"
+  src: url('../assets/fonts/OpenSans-Regular.ttf')
+@font-face
+  font-family: "OpenSans-SemiBold"
+  src: url('../assets/fonts/OpenSans-Semibold.ttf')
+@font-face
+  font-family: "OpenSans-Bold"
+  src: url('../assets/fonts/OpenSans-Bold.ttf')
+@font-face
+  font-family: "OpenSans-Light"
+  src: url('../assets/fonts/OpenSans-Light.ttf')
+
+//rests
+*, html, body
+  padding: 0
+  margin: 0
+  font-family: "OpenSans-Reg"
+
+body
+  background-color: #f9f9f9
+
+h1, h2, h3, h4
+  font-family: "OpenSans-SemiBold"
+h1
+  font:
+    size: 43px
+    family: "OpenSans-Light"
+    weight: 100
+    color: $accent
+h2
+  color: $accent
+  font
+    family: "OpenSans-Light"
+    weight: 100
+    size: 23px
+.accent-color
+  color: $accent
+
+a
+  color: inherit
+  text-decoration: none
+.cta-btn:hover
+  color: #fff
+  background-color: $accent
+.cta-btn
+  color: $accent
+  border: 1px solid $accent
+  font-size: 18px
+  margin-top: 40px
+  cursor: pointer
+  border-radius: 3px
+  padding: 5px
+  display: inline-block
+  h1
+    font-weight: 100
+    font-family: "OpenSans-Light"
+    font-size: 43px
