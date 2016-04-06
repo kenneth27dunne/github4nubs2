@@ -144,31 +144,6 @@ a {
       margin-top: 0;
       padding-top: 13px; }
 
-.signup-container {
-  min-height: 175px;
-  background: rgba(212, 135, 41, 0.77);
-  text-align: center;
-  color: #fff;
-  padding: 20px; }
-  .signup-container p {
-    max-width: 590px;
-    margin: auto;
-    padding: 20px 0; }
-  .signup-container input {
-    font-family: "OpenSans-Light";
-    padding: 15px;
-    font-size: 14px; }
-  .signup-container input[type="text"].signup-email {
-    width: 225px;
-    margin-right: 20px; }
-  .signup-container input[type="submit"].signup-submit {
-    border: none;
-    color: #fff;
-    background-color: #d27303; }
-  .signup-container .signup-form {
-    position: relative;
-    transition: all ease; }
-
 .services-container {
   padding: 50px 30px;
   text-align: center;
