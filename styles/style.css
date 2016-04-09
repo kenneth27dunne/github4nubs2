@@ -1,3 +1,6 @@
+.clear {
+  clear: both; }
+
 .design-title {
   color: #d27303;
   margin-bottom: 30px;
@@ -312,50 +315,82 @@ a {
 
 .request-quote-container {
   text-align: center;
-  padding: 50px 0;
+  height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   background-color: #d27303; }
   .request-quote-container .hompage-contact-form {
-    padding: 0; }
-    .request-quote-container .hompage-contact-form .contact-form-content {
-      background-color: #fff;
-      border-radius: 0px 0px 5px 5px;
-      padding: 10px; }
+    padding: 0;
+    max-width: 450px; }
     .request-quote-container .hompage-contact-form .contact-form-heading {
-      border-radius: 5px 5px 0px 0px;
+      border-radius: 3px 3px 0px 0px;
       background-color: #222;
-      color: #fff;
-      padding: 10px 20px;
-      text-align: center; }
-  .request-quote-container textarea {
-    margin: 10px;
-    border: none;
-    background-color: #e8ebed;
-    clear: both;
-    width: 340px;
-    height: 130px;
-    padding: 3px 10px;
-    margin-top: 15px; }
-  .request-quote-container input[type="text"], .request-quote-container input[type="email"] {
-    padding: 10px;
-    background-color: #e8ebed;
-    border: none;
-    width: 200px;
-    padding: 3px 10px; }
-  .request-quote-container input[type="text"] {
-    margin-right: 10px; }
-  .request-quote-container div {
-    text-align: right;
-    max-width: 460px;
-    width: 95%;
-    margin: auto; }
-    .request-quote-container div input[type="submit"] {
-      color: #fff;
-      padding: 5px 10px;
-      margin-top: 20px;
-      background-color: #d27303;
-      border: none;
-      font-family: "OpenSans-Reg";
-      font-size: 20px; }
+      width: 100%;
+      text-align: center;
+      padding: 13px 0;
+      margin: 0; }
+      .request-quote-container .hompage-contact-form .contact-form-heading h2 {
+        padding: 0;
+        margin: 0;
+        font-size: 23px;
+        font-family: "OpenSans-light";
+        font-weight: 100;
+        color: #fff; }
+    .request-quote-container .hompage-contact-form .contact-form-content {
+      padding: 20px 0;
+      margin: 0;
+      background-color: #fff;
+      border-radius: 0px 0px 3px 3px;
+      width: 100%; }
+      .request-quote-container .hompage-contact-form .contact-form-content input[type="text"], .request-quote-container .hompage-contact-form .contact-form-content input[type="email"], .request-quote-container .hompage-contact-form .contact-form-content textarea {
+        padding: 10px 15px;
+        margin: 0 15px;
+        border-radius: 3px;
+        border: none;
+        background-color: #e8ebed;
+        resize: none;
+        margin-bottom: 13px; }
+      .request-quote-container .hompage-contact-form .contact-form-content .submit_holder {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end; }
+        .request-quote-container .hompage-contact-form .contact-form-content .submit_holder input[type="submit"] {
+          color: #fff;
+          padding: 7px 20px;
+          margin: 5px 15px;
+          background-color: #d27303;
+          border: none;
+          border-radius: 3px;
+          font-family: "OpenSans-Light";
+          font-size: 18px; }
+      .request-quote-container .hompage-contact-form .contact-form-content .email_input_holder {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around; }
+        .request-quote-container .hompage-contact-form .contact-form-content .email_input_holder input {
+          width: 100%; }
+      .request-quote-container .hompage-contact-form .contact-form-content .name_input_holder {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around; }
+        .request-quote-container .hompage-contact-form .contact-form-content .name_input_holder input {
+          width: 50%; }
+        .request-quote-container .hompage-contact-form .contact-form-content .name_input_holder input:first-child {
+          margin-right: 10px; }
+      .request-quote-container .hompage-contact-form .contact-form-content .textarea_holder {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around; }
+        .request-quote-container .hompage-contact-form .contact-form-content .textarea_holder textarea {
+          width: 100%;
+          height: 100px; }
 
 .footer-container {
   position: relative;
