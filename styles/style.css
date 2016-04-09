@@ -322,11 +322,23 @@ a {
   -webkit-justify-content: space-around;
   justify-content: space-around;
   background-color: #d27303; }
+  .request-quote-container .quote_hero_text {
+    color: #fff;
+    max-width: 450px;
+    text-align: left; }
+    .request-quote-container .quote_hero_text h1 {
+      font-family: "OpenSans-SemiBold";
+      font-size: 43px;
+      margin-bottom: 25px; }
+    .request-quote-container .quote_hero_text h3 {
+      font-family: "OpenSans-Light";
+      font-weight: 100;
+      font-size: 23px; }
   .request-quote-container .hompage-contact-form {
     padding: 0;
     max-width: 450px; }
     .request-quote-container .hompage-contact-form .contact-form-heading {
-      border-radius: 3px 3px 0px 0px;
+      border-radius: 4px 4px 0px 0px;
       background-color: #222;
       width: 100%;
       text-align: center;
@@ -343,12 +355,12 @@ a {
       padding: 20px 0;
       margin: 0;
       background-color: #fff;
-      border-radius: 0px 0px 3px 3px;
+      border-radius: 0px 0px 4px 4px;
       width: 100%; }
       .request-quote-container .hompage-contact-form .contact-form-content input[type="text"], .request-quote-container .hompage-contact-form .contact-form-content input[type="email"], .request-quote-container .hompage-contact-form .contact-form-content textarea {
         padding: 10px 15px;
-        margin: 0 15px;
-        border-radius: 3px;
+        margin: 0 20px;
+        border-radius: 4px;
         border: none;
         background-color: #e8ebed;
         resize: none;
@@ -366,7 +378,7 @@ a {
           border: none;
           border-radius: 3px;
           font-family: "OpenSans-Light";
-          font-size: 18px; }
+          font-size: 16px; }
       .request-quote-container .hompage-contact-form .contact-form-content .email_input_holder {
         display: -webkit-flex;
         display: flex;
