@@ -206,10 +206,8 @@ a {
   text-align: center;
   border-bottom: 1px solid #FAFAFA;
   min-height: 100px;
-  background-image: url("../assets/background/bg-2.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
+  background-color: #efefef;
+  margin: auto; }
   .client-container > * {
     position: relative;
     z-index: 1; }
@@ -226,7 +224,7 @@ a {
     background-color: #000;
     opacity: 0.4; }
   .client-container .design-title {
-    color: #fff;
+    color: #d27303;
     margin-top: -20px; }
   .client-container .client-area {
     max-width: 605px;
