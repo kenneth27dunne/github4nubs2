@@ -68,7 +68,7 @@
       margin-top: 0
       padding-top: 13px
 
-//services 
+//services
 .services-container
   padding: 50px 30px
   text-align: center
@@ -240,22 +240,32 @@
 .request-quote-container
   text-align: center
   padding: 50px 0
-  background:
-    image: url(../assets/background/bg-3.jpg)
-    size: contain
-    position: center
-  h2
-    color: #fff
-    margin-bottom: 50px
+  background-color: $accent
+  .hompage-contact-form
+    padding: 0
+    .contact-form-content
+      background-color: #fff
+      border-radius: 0px 0px 5px 5px
+      padding: 10px
+    .contact-form-heading
+      border-radius: 5px 5px 0px 0px
+      background-color: #222
+      color: #fff
+      padding: 10px 20px
+      text-align: center
   textarea
-    border: 1px solid $accent
+    margin: 10px
+    border: none
+    background-color: #e8ebed
     clear: both
-    width: 440px
+    width: 340px
     height: 130px
     padding: 3px 10px
     margin-top: 15px
   input[type="text"], input[type="email"]
-    border: 1px solid $accent
+    padding: 10px
+    background-color: #e8ebed
+    border: none
     width: 200px
     padding: 3px 10px
   input[type="text"]

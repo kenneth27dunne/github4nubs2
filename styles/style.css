@@ -313,21 +313,32 @@ a {
 .request-quote-container {
   text-align: center;
   padding: 50px 0;
-  background-image: url(../assets/background/bg-3.jpg);
-  background-size: contain;
-  background-position: center; }
-  .request-quote-container h2 {
-    color: #fff;
-    margin-bottom: 50px; }
+  background-color: #d27303; }
+  .request-quote-container .hompage-contact-form {
+    padding: 0; }
+    .request-quote-container .hompage-contact-form .contact-form-content {
+      background-color: #fff;
+      border-radius: 0px 0px 5px 5px;
+      padding: 10px; }
+    .request-quote-container .hompage-contact-form .contact-form-heading {
+      border-radius: 5px 5px 0px 0px;
+      background-color: #222;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center; }
   .request-quote-container textarea {
-    border: 1px solid #d27303;
+    margin: 10px;
+    border: none;
+    background-color: #e8ebed;
     clear: both;
-    width: 440px;
+    width: 340px;
     height: 130px;
     padding: 3px 10px;
     margin-top: 15px; }
   .request-quote-container input[type="text"], .request-quote-container input[type="email"] {
-    border: 1px solid #d27303;
+    padding: 10px;
+    background-color: #e8ebed;
+    border: none;
     width: 200px;
     padding: 3px 10px; }
   .request-quote-container input[type="text"] {
