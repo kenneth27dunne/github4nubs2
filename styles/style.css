@@ -150,6 +150,7 @@ a {
 .services-container {
   padding: 50px 30px;
   text-align: center;
+  background-color: #f2f2f2;
   color: #696969;
   overflow: auto; }
   .services-container h2 {
@@ -206,7 +207,7 @@ a {
   text-align: center;
   border-bottom: 1px solid #FAFAFA;
   min-height: 100px;
-  background-color: #efefef;
+  background-color: #fff;
   margin: auto; }
   .client-container > * {
     position: relative;

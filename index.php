@@ -5,6 +5,7 @@
 			<h1 class="design-title">Our Clients</h2>
 			<div class="client-area">
 				<div class="client-icon-area">
+					<i class="fa fa-chevron-right"></i>
 					<div class="item "><img src="assets/mw365.png"/ width="200px"></div>
 					<div class="item kickstart"><img src="assets/kickstart graphicslogo.png"/></div>
 					<div class="item earthware"><img src="assets/eartwareskincarelogo.png"/></div>
