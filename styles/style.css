@@ -122,7 +122,13 @@ a {
       border-bottom: 2px solid #EA7F00; }
   .head-container .hero-text {
     position: relative;
-    top: 28%; }
+    top: 28%;
+    text-align: center; }
+    .head-container .hero-text .hero-line-break {
+      height: 1px;
+      width: 150px;
+      margin: 15px auto -10px auto;
+      background-color: #fff; }
     .head-container .hero-text h1 {
       clear: both;
       text-align: center;
@@ -132,10 +138,9 @@ a {
         display: inline-block;
         line-height: 1.5em;
         padding: 0 10px;
-        border: 4px solid #fff;
         font-size: 8.2vmin;
-        font-weight: 700;
-        font-family: "OpenSans-SemiBold";
+        font-weight: 500;
+        font-family: "OpenSans-Light";
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 0.15em; }
@@ -143,7 +148,10 @@ a {
       text-align: center;
       letter-spacing: 0.15em;
       color: #fff;
-      font-size: 6vmin;
+      font-family: "OpenSans-Light";
+      font-size: 5vmin;
+      font-weight: 100;
+      font-style: italic;
       margin-top: 0;
       padding-top: 13px; }
 
