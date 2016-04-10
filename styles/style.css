@@ -272,53 +272,23 @@ a {
       right: 0; }
 
 .responsive-area-container {
+  background-color: #30D8FB;
+  min-height: 100vh;
+  position: relative;
   text-align: center;
-  background-color: #FAFAFA;
-  overflow: auto;
-  padding: 60px 20px;
-  color: #373636; }
-  .responsive-area-container .inner-responsive-container {
-    margin: 0px auto;
-    max-width: 905px; }
-  .responsive-area-container h2 {
-    padding-bottom: 15px; }
-  .responsive-area-container .desktop-area {
-    text-align: left;
-    max-width: 905px;
-    padding: 50px 0;
-    margin: auto;
-    position: relative; }
-    .responsive-area-container .desktop-area .desktop-text {
-      max-width: 50%;
-      padding: 0;
-      margin: 0;
-      float: left; }
-    .responsive-area-container .desktop-area .desktop-img {
-      margin: 0;
-      padding: 0;
-      float: right; }
-      .responsive-area-container .desktop-area .desktop-img img {
-        width: 310px; }
-    .responsive-area-container .desktop-area p {
-      text-align: center; }
-  .responsive-area-container .mobile-area {
-    clear: both;
-    padding: 50px 0;
-    text-align: left;
-    max-width: 905px;
-    margin: auto;
-    position: relative; }
-    .responsive-area-container .mobile-area .mobile-text {
-      max-width: 50%;
-      padding: 0;
-      margin: 0;
-      float: right; }
-    .responsive-area-container .mobile-area .mobile-img {
-      margin: 0;
-      padding: 0;
-      float: left; }
-    .responsive-area-container .mobile-area p {
-      text-align: center; }
+  color: #fff; }
+  .responsive-area-container .responsive-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .responsive-area-container .responsive-content-container .responsive-mobile-section {
+      align-self: baseline; }
+      .responsive-area-container .responsive-content-container .responsive-mobile-section .responsive-img-container img {
+        width: 150px; }
+    .responsive-area-container .responsive-content-container .responsive-desktop-section {
+      align-items: baseline; }
+      .responsive-area-container .responsive-content-container .responsive-desktop-section .responsive-img-container img {
+        width: 450px; }
 
 .request-quote-container {
   text-align: center;

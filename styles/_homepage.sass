@@ -196,53 +196,27 @@
 
 // responsive section
 .responsive-area-container
+  background-color: #30D8FB
+  min-height: 100vh
+  position: relative
   text-align: center
-  background-color: #FAFAFA
-  overflow: auto
-  padding: 60px 20px
-  color: #373636
-  .inner-responsive-container
-    margin: 0px auto
-    max-width: 905px
-  h2
-    padding-bottom: 15px
-  .desktop-area
-    text-align: left
-    max-width: 905px
-    padding: 50px 0
-    margin: auto
-    position: relative
-    .desktop-text
-      max-width: 50%
-      padding: 0
-      margin: 0
-      float: left
-    .desktop-img
-      margin: 0
-      padding: 0
-      float: right
-      img
-        width: 310px
-    p
-      text-align: center
-  .mobile-area
-    clear: both
-    padding: 50px 0
-    text-align: left
-    max-width: 905px
-    margin: auto
-    position: relative
-    .mobile-text
-      max-width: 50%
-      padding: 0
-      margin: 0
-      float: right
-    .mobile-img
-      margin: 0
-      padding: 0
-      float: left
-    p
-      text-align: center
+  color: #fff
+  .responsive-content-container
+    display: flex
+    align-items: center
+    justify-content: center
+    .responsive-mobile-section
+      align-self: baseline
+      .responsive-img-container
+        img
+          width: 150px
+    .responsive-msg-container
+    .responsive-desktop-section
+      align-items: baseline
+      .responsive-img-container
+        img
+          width: 450px
+      .responsive-msg-container
 
 //request area
 
