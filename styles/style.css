@@ -2,7 +2,7 @@
   clear: both; }
 
 .design-title {
-  color: #d27303;
+  color: #ff8a00;
   margin-bottom: 30px;
   font-weight: 100;
   font-family: "OpenSans-Light";
@@ -35,17 +35,17 @@ h1 {
   font-size: 43px;
   font-family: "OpenSans-Light";
   font-weight: 100;
-  font-color: #d27303; }
+  font-color: #ff8a00; }
 
 h2 {
-  color: #d27303; }
+  color: #ff8a00; }
   h2 font {
     family: "OpenSans-Light";
     weight: 100;
     size: 23px; }
 
 .accent-color {
-  color: #d27303; }
+  color: #ff8a00; }
 
 a {
   color: inherit;
@@ -53,11 +53,11 @@ a {
 
 .cta-btn:hover {
   color: #fff;
-  background-color: #d27303; }
+  background-color: #ff8a00; }
 
 .cta-btn {
-  color: #d27303;
-  border: 1px solid #d27303;
+  color: #ff8a00;
+  border: 1px solid #ff8a00;
   font-size: 18px;
   margin-top: 40px;
   cursor: pointer;
@@ -162,7 +162,7 @@ a {
   color: #696969;
   overflow: auto; }
   .services-container h2 {
-    color: #d27303; }
+    color: #ff8a00; }
   .services-container .service-widget-area {
     max-width: 940px;
     margin: auto;
@@ -210,12 +210,22 @@ a {
           family: "OpenSans-Light";
           size: 14px; }
 
+.quote-text-area {
+  background-image: url(../assets/Click-Shift-image-3.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  text-align: right;
+  height: 300px; }
+
 .client-container {
   padding: 50px 0;
   text-align: center;
   border-bottom: 1px solid #FAFAFA;
   min-height: 100px;
-  background-color: #fff;
   margin: auto; }
   .client-container > * {
     position: relative;
@@ -233,7 +243,7 @@ a {
     background-color: #000;
     opacity: 0.4; }
   .client-container .design-title {
-    color: #d27303;
+    color: #ff8a00;
     margin-top: -20px; }
   .client-container .client-area {
     max-width: 605px;
@@ -278,7 +288,9 @@ a {
   text-align: center;
   color: #fff; }
   .responsive-area-container h1 {
-    padding-bottom: 50px; }
+    color: #696969;
+    padding: 0 0 50px 0;
+    margin: 0; }
   .responsive-area-container .responsive-content-container {
     display: flex;
     align-items: baseline;
@@ -293,11 +305,11 @@ a {
         .responsive-area-container .responsive-content-container .responsive-mobile-section .responsive-img-container img {
           width: 150px; }
       .responsive-area-container .responsive-content-container .responsive-mobile-section .responsive-msg-container {
-        background-color: rgba(255, 255, 255, 0.25);
-        border-radius: 8px;
-        max-width: 240px;
+        max-width: 272px;
         min-width: 150px;
-        margin-right: 20px;
+        margin-top: -20px;
+        margin-right: 50px;
+        text-align: left;
         max-height: 150px;
         height: 100px;
         padding: 0;
@@ -305,7 +317,22 @@ a {
         display: flex;
         align-items: center; }
         .responsive-area-container .responsive-content-container .responsive-mobile-section .responsive-msg-container p {
-          padding: 0; }
+          font-size: 16px;
+          background-color: #6fe4fc;
+          border-radius: 8px 8px 0px 8px;
+          padding: 10px 15px;
+          position: relative; }
+          .responsive-area-container .responsive-content-container .responsive-mobile-section .responsive-msg-container p .mobile-svg-triangle {
+            position: absolute;
+            bottom: -15px;
+            right: -35px;
+            fill: #6fe4fc;
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH"; }
     .responsive-area-container .responsive-content-container .responsive-desktop-section {
       position: relative;
       display: flex; }
@@ -316,14 +343,47 @@ a {
       .responsive-area-container .responsive-content-container .responsive-desktop-section .responsive-msg-container {
         max-width: 300px;
         min-width: 200px;
-        margin-left: 20px;
+        text-align: left;
+        margin-left: 50px;
         display: flex;
         align-items: center; }
         .responsive-area-container .responsive-content-container .responsive-desktop-section .responsive-msg-container p {
+          font-size: 16px;
           align-self: flex-start;
-          background-color: rgba(0, 0, 0, 0.15);
-          border-radius: 8px;
-          padding: 0; }
+          background-color: #29b8d6;
+          border-radius: 8px 8px 8px 0px;
+          padding: 10px 15px;
+          position: relative; }
+        .responsive-area-container .responsive-content-container .responsive-desktop-section .responsive-msg-container .desktop-svg-triangle {
+          position: absolute;
+          bottom: -15px;
+          left: -35px;
+          fill: #29b8d6; }
+
+.working-with-clickshift {
+  text-align: center;
+  padding: 50px 0; }
+  .working-with-clickshift h1 {
+    padding-bottom: 50px;
+    color: #ff8a00; }
+  .working-with-clickshift .wwc-inner-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 950px;
+    margin: auto; }
+    .working-with-clickshift .wwc-inner-container div h2 {
+      font-family: "OpenSans-SemiBold";
+      font-weight: 100; }
+    .working-with-clickshift .wwc-inner-container div img {
+      width: 110px; }
+    .working-with-clickshift .wwc-inner-container .consultation h2 {
+      color: #30fb86; }
+    .working-with-clickshift .wwc-inner-container .conceptual-design h2 {
+      color: #ff9b25; }
+    .working-with-clickshift .wwc-inner-container .finished-website h2 {
+      color: #cd53ff; }
+    .working-with-clickshift .wwc-inner-container .support h2 {
+      color: #30d8fb; }
 
 .request-quote-container {
   text-align: center;
@@ -333,7 +393,7 @@ a {
   align-items: center;
   -webkit-justify-content: space-around;
   justify-content: space-around;
-  background-color: #d27303; }
+  background-color: #ff8a00; }
   .request-quote-container .quote_hero_text {
     color: #fff;
     max-width: 450px;
@@ -386,7 +446,7 @@ a {
           color: #fff;
           padding: 7px 20px;
           margin: 5px 15px;
-          background-color: #d27303;
+          background-color: #ff8a00;
           border: none;
           border-radius: 3px;
           font-family: "OpenSans-Light";
@@ -442,7 +502,7 @@ a {
     justify-content: space-around;
     margin: auto; }
     .footer-container .inner-footer-container h1 {
-      color: #d27303;
+      color: #ff8a00;
       font-weight: 100;
       font-family: "OpenSans-Light";
       font-size: 24px;
@@ -455,7 +515,7 @@ a {
         font-size: 14px; }
       .footer-container .inner-footer-container ul li a:hover {
         text-decoration: underline;
-        color: #d27303; }
+        color: #ff8a00; }
     .footer-container .inner-footer-container img {
       width: 250px;
       opacity: 0.7; }
@@ -587,7 +647,7 @@ a {
   .splitter input[type="submit"].signup-submit {
     border: none;
     color: #fff;
-    background-color: #d27303; }
+    background-color: #ff8a00; }
   .splitter .signup-form {
     position: relative;
     transition: all ease; }
@@ -615,7 +675,7 @@ a {
     max-width: 372px;
     margin-right: 80px; }
     .eCommerce-service .leftPanel h2 {
-      color: #d27303;
+      color: #ff8a00;
       padding-bottom: 20px; }
 
 .clear {
@@ -855,7 +915,7 @@ a {
   text-align: center;
   padding: 30px 0; }
   .clickshift-products .coming-soon {
-    color: #d27303;
+    color: #ff8a00;
     margin-top: -30px;
     font-family: "openSans-Light";
     font-size: 30px;
@@ -867,7 +927,7 @@ a {
 
 .clientPage h1 {
   text-align: center;
-  color: #d27303;
+  color: #ff8a00;
   margin-top: 30px;
   margin-bottom: -25px;
   padding: 0;
@@ -905,7 +965,7 @@ a {
       width: 345px;
       text-align: center; }
       .ewsc-container .leftContentContainer .textArea h2 {
-        color: #d27303;
+        color: #ff8a00;
         font-size: 30px;
         font-family: "OpenSans-Light";
         font-weight: 100; }
@@ -918,11 +978,11 @@ a {
         width: 260px; }
         .ewsc-container .leftContentContainer .textArea .btnArea .btn:hover {
           color: #fff;
-          background-color: #d27303; }
+          background-color: #ff8a00; }
         .ewsc-container .leftContentContainer .textArea .btnArea .btn {
-          border: 1px solid #d27303;
+          border: 1px solid #ff8a00;
           border-radius: 3px;
-          color: #d27303;
+          color: #ff8a00;
           width: 110px;
           float: left;
           background: #f9f9f9;
@@ -945,7 +1005,7 @@ a {
   margin: auto; }
   .faqPage h1 {
     text-align: center;
-    color: #d27303; }
+    color: #ff8a00; }
 
 .faqContentContainer {
   margin: 30px auto;

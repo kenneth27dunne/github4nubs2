@@ -140,14 +140,27 @@
         color: $font-color
         margin-top: 25px
         cursor: pointer
-// clients
 
+
+
+.quote-text-area
+  background:
+    image: url(../assets/Click-Shift-image-3.jpg)
+    size: cover
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 18px
+  color: #fff
+  text-align: right
+  height: 300px
+
+// clients
 .client-container
   padding: 50px 0
   text-align: center
   border-bottom: 1px solid #FAFAFA
   min-height: 100px
-  background-color: #fff
   margin: auto
   +overlay(0.4, #000)
   .design-title
@@ -202,14 +215,14 @@
   text-align: center
   color: #fff
   h1
-    padding-bottom: 50px
+    color: $font-color
+    padding: 0 0 50px 0
+    margin: 0
   .responsive-content-container
     display: flex
     align-items: baseline
     justify-content: center
     padding: 0 25px
-
-
     .responsive-mobile-section
       position: relative
       display: flex
@@ -219,11 +232,11 @@
         img
           width: 150px
       .responsive-msg-container
-        background-color:  rgba(255, 255, 255, 0.25)
-        border-radius: 8px
-        max-width: 240px
+        max-width: 272px
         min-width: 150px
-        margin-right: 20px
+        margin-top: -20px
+        margin-right: 50px
+        text-align: left
         max-height: 150px
         height: 100px
         padding: 0
@@ -231,7 +244,22 @@
         display: flex
         align-items: center
         p
-          padding: 0
+          font-size: 16px
+          background-color:  #6fe4fc
+          border-radius: 8px 8px 0px 8px
+          padding: 10px 15px
+          position: relative
+          .mobile-svg-triangle
+            position: absolute
+            bottom: -15px
+            right: -35px
+            fill: #6fe4fc
+            -moz-transform: scaleX(-1)
+            -o-transform: scaleX(-1)
+            -webkit-transform: scaleX(-1)
+            transform: scaleX(-1)
+            filter: FlipH
+            -ms-filter: "FlipH"
     .responsive-desktop-section
       position: relative
       display: flex
@@ -242,17 +270,58 @@
       .responsive-msg-container
         max-width: 300px
         min-width: 200px
-        margin-left: 20px
+        text-align: left
+        margin-left: 50px
         display: flex
         align-items: center
         p
+          font-size: 16px
           align-self: flex-start
-          background-color:  rgba(0, 0, 0, 0.15)
-          border-radius: 8px
-          padding: 0
+          background-color:  #29b8d6
+          border-radius: 8px 8px 8px 0px
+          padding: 10px 15px
+          position: relative
+        .desktop-svg-triangle
+          position: absolute
+          bottom: -15px
+          left: -35px
+          fill: #29b8d6
+
+
+//working with clickshift
+.working-with-clickshift
+  text-align: center
+  padding: 50px 0
+  h1
+    padding-bottom: 50px
+    color: $accent
+  .wwc-inner-container
+    display: flex
+    justify-content: space-around
+    max-width: 950px
+    margin: auto
+    div
+      h2
+        font:
+          family: "OpenSans-SemiBold"
+          weight: 100
+      img
+        width: 110px
+    .consultation
+      h2
+        color: #30fb86
+    .conceptual-design
+      h2
+        color: #ff9b25
+    .finished-website
+      h2
+        color: #cd53ff
+    .support
+      h2
+        color: #30d8fb
+
 
 //request area
-
 .request-quote-container
   text-align: center
   height: 100vh
