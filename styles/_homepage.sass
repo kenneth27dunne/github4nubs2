@@ -83,7 +83,7 @@
   padding: 50px 30px
   text-align: center
   //border-top: 8px solid #d27303
-  background-color: #f2f2f2
+  background-color: #fff
   color: $font-color
   overflow: auto
   h2
@@ -141,81 +141,15 @@
         margin-top: 25px
         cursor: pointer
 
-
-
-.quote-text-area
-  background:
-    image: url(../assets/Click-Shift-image-3.jpg)
-    size: cover
-  display: flex
-  align-items: center
-  justify-content: center
-  font-size: 18px
-  color: #fff
-  text-align: right
-  height: 300px
-
-// clients
-.client-container
-  padding: 50px 0
-  text-align: center
-  border-bottom: 1px solid #FAFAFA
-  min-height: 100px
-  margin: auto
-  +overlay(0.4, #000)
-  .design-title
-    color: $accent
-    margin-top: -20px
-  .client-area
-    max-width: 605px
-    //min-height: 90px
-    margin: 30px auto 0 auto
-    position: relative
-    .client-icon-area
-      max-height: 150px
-      margin: auto
-      display: flex
-      justify-content: space-around
-      .item
-        margin: auto
-        overflow: hidden
-        max-width: 755px
-        white-space: nowrap
-        img
-          cursor: pointer
-          height: 80px
-          width: auto
-        img:hover
-          -webkit-filter: grayscale(100%)
-          filter: grayscale(100%)
-      .earthware, .kickstart
-        img
-          //height: 90px
-    .client-nav
-      position: absolute
-      top: 0
-      text-decoration: none!important
-      z-index: 2
-      cursor: pointer
-      height: 50px
-      font:
-        family: "OpenSans-Light"
-        size: 100px
-      color: #fff
-    .client-left
-      left: 0
-    .client-right
-      right: 0
-
 // responsive section
 .responsive-area-container
-  background-color: #30D8FB
+  background-color: #fff
   padding: 50px 0
   position: relative
   text-align: center
   color: #fff
   h1
-    color: $font-color
+    color: $accent
     padding: 0 0 50px 0
     margin: 0
   .responsive-content-container
@@ -287,19 +221,21 @@
           left: -35px
           fill: #29b8d6
 
-
 //working with clickshift
 .working-with-clickshift
   text-align: center
   padding: 50px 0
+  background-color: #fff
   h1
     padding-bottom: 50px
     color: $accent
   .wwc-inner-container
     display: flex
     justify-content: space-around
+    align-items: center
     max-width: 950px
     margin: auto
+
     div
       h2
         font:
@@ -320,6 +256,94 @@
       h2
         color: #30d8fb
 
+.quote-text-area
+  background:
+    //image: url(../assets/Click-Shift-image-3.jpg)
+    //size: cover
+    color: #f9f9f9
+  font-size: 18px
+  color: #fff
+  padding: 20px 0 0 0
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  .inner-quote
+    width: 100%
+  .quote-content
+    +overlay(0.2, #000)
+    padding: 30px 0
+    margin-top: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 100%
+    text-align: right
+  .design-title
+    color: $accent
+    margin-top: 20px
+    margin-bottom: 30px
+  .client-area
+    max-width: 605px
+    margin: 30px auto 0 auto
+    position: relative
+    .client-icon-area
+      max-height: 150px
+      margin: auto
+      display: flex
+      justify-content: space-around
+      .item
+        margin: auto
+        overflow: hidden
+        max-width: 755px
+        white-space: nowrap
+        img
+          padding-bottom: 15px
+          cursor: pointer
+          height: 80px
+          width: auto
+        img:hover
+          -webkit-filter: grayscale(100%)
+          filter: grayscale(100%)
+      .earthware
+        border-bottom: 2px solid $accent
+  .client-quote-name
+    color: $accent
+
+// clients
+.client-container
+  padding: 50px 0
+  text-align: center
+  border-bottom: 1px solid #FAFAFA
+  min-height: 100px
+  margin: auto
+  display: none
+  +overlay(0.4, #000)
+  .design-title
+    color: $accent
+    margin-top: -20px
+  .client-area
+    max-width: 605px
+    //min-height: 90px
+    margin: 30px auto 0 auto
+    position: relative
+    .client-icon-area
+      max-height: 150px
+      margin: auto
+      display: flex
+      justify-content: space-around
+      .item
+        margin: auto
+        overflow: hidden
+        max-width: 755px
+        white-space: nowrap
+        img
+          cursor: pointer
+          height: 80px
+          width: auto
+        img:hover
+          -webkit-filter: grayscale(100%)
+          filter: grayscale(100%)
 
 //request area
 .request-quote-container
@@ -345,7 +369,6 @@
         family: "OpenSans-Light"
         weight: 100
         size: 23px
-
   .hompage-contact-form
     padding: 0
     max-width: 450px

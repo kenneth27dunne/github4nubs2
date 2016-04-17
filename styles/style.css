@@ -158,7 +158,7 @@ a {
 .services-container {
   padding: 50px 30px;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #fff;
   color: #696969;
   overflow: auto; }
   .services-container h2 {
@@ -210,85 +210,14 @@ a {
           family: "OpenSans-Light";
           size: 14px; }
 
-.quote-text-area {
-  background-image: url(../assets/Click-Shift-image-3.jpg);
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  color: #fff;
-  text-align: right;
-  height: 300px; }
-
-.client-container {
-  padding: 50px 0;
-  text-align: center;
-  border-bottom: 1px solid #FAFAFA;
-  min-height: 100px;
-  margin: auto; }
-  .client-container > * {
-    position: relative;
-    z-index: 1; }
-  .client-container.overlay {
-    position: relative; }
-  .client-container.overlay:before {
-    position: absolute;
-    top: 0;
-    content: "";
-    z-index: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    opacity: 0.4; }
-  .client-container .design-title {
-    color: #ff8a00;
-    margin-top: -20px; }
-  .client-container .client-area {
-    max-width: 605px;
-    margin: 30px auto 0 auto;
-    position: relative; }
-    .client-container .client-area .client-icon-area {
-      max-height: 150px;
-      margin: auto;
-      display: flex;
-      justify-content: space-around; }
-      .client-container .client-area .client-icon-area .item {
-        margin: auto;
-        overflow: hidden;
-        max-width: 755px;
-        white-space: nowrap; }
-        .client-container .client-area .client-icon-area .item img {
-          cursor: pointer;
-          height: 80px;
-          width: auto; }
-        .client-container .client-area .client-icon-area .item img:hover {
-          -webkit-filter: grayscale(100%);
-          filter: grayscale(100%); }
-    .client-container .client-area .client-nav {
-      position: absolute;
-      top: 0;
-      text-decoration: none !important;
-      z-index: 2;
-      cursor: pointer;
-      height: 50px;
-      font-family: "OpenSans-Light";
-      font-size: 100px;
-      color: #fff; }
-    .client-container .client-area .client-left {
-      left: 0; }
-    .client-container .client-area .client-right {
-      right: 0; }
-
 .responsive-area-container {
-  background-color: #30D8FB;
+  background-color: #fff;
   padding: 50px 0;
   position: relative;
   text-align: center;
   color: #fff; }
   .responsive-area-container h1 {
-    color: #696969;
+    color: #ff8a00;
     padding: 0 0 50px 0;
     margin: 0; }
   .responsive-area-container .responsive-content-container {
@@ -362,13 +291,15 @@ a {
 
 .working-with-clickshift {
   text-align: center;
-  padding: 50px 0; }
+  padding: 50px 0;
+  background-color: #fff; }
   .working-with-clickshift h1 {
     padding-bottom: 50px;
     color: #ff8a00; }
   .working-with-clickshift .wwc-inner-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     max-width: 950px;
     margin: auto; }
     .working-with-clickshift .wwc-inner-container div h2 {
@@ -384,6 +315,118 @@ a {
       color: #cd53ff; }
     .working-with-clickshift .wwc-inner-container .support h2 {
       color: #30d8fb; }
+
+.quote-text-area {
+  background-color: #f9f9f9;
+  font-size: 18px;
+  color: #fff;
+  padding: 20px 0 0 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .quote-text-area .inner-quote {
+    width: 100%; }
+  .quote-text-area .quote-content {
+    padding: 30px 0;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    text-align: right; }
+    .quote-text-area .quote-content > * {
+      position: relative;
+      z-index: 1; }
+    .quote-text-area .quote-content.overlay {
+      position: relative; }
+    .quote-text-area .quote-content.overlay:before {
+      position: absolute;
+      top: 0;
+      content: "";
+      z-index: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      opacity: 0.2; }
+  .quote-text-area .design-title {
+    color: #ff8a00;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+  .quote-text-area .client-area {
+    max-width: 605px;
+    margin: 30px auto 0 auto;
+    position: relative; }
+    .quote-text-area .client-area .client-icon-area {
+      max-height: 150px;
+      margin: auto;
+      display: flex;
+      justify-content: space-around; }
+      .quote-text-area .client-area .client-icon-area .item {
+        margin: auto;
+        overflow: hidden;
+        max-width: 755px;
+        white-space: nowrap; }
+        .quote-text-area .client-area .client-icon-area .item img {
+          padding-bottom: 15px;
+          cursor: pointer;
+          height: 80px;
+          width: auto; }
+        .quote-text-area .client-area .client-icon-area .item img:hover {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
+      .quote-text-area .client-area .client-icon-area .earthware {
+        border-bottom: 2px solid #ff8a00; }
+  .quote-text-area .client-quote-name {
+    color: #ff8a00; }
+
+.client-container {
+  padding: 50px 0;
+  text-align: center;
+  border-bottom: 1px solid #FAFAFA;
+  min-height: 100px;
+  margin: auto;
+  display: none; }
+  .client-container > * {
+    position: relative;
+    z-index: 1; }
+  .client-container.overlay {
+    position: relative; }
+  .client-container.overlay:before {
+    position: absolute;
+    top: 0;
+    content: "";
+    z-index: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4; }
+  .client-container .design-title {
+    color: #ff8a00;
+    margin-top: -20px; }
+  .client-container .client-area {
+    max-width: 605px;
+    margin: 30px auto 0 auto;
+    position: relative; }
+    .client-container .client-area .client-icon-area {
+      max-height: 150px;
+      margin: auto;
+      display: flex;
+      justify-content: space-around; }
+      .client-container .client-area .client-icon-area .item {
+        margin: auto;
+        overflow: hidden;
+        max-width: 755px;
+        white-space: nowrap; }
+        .client-container .client-area .client-icon-area .item img {
+          cursor: pointer;
+          height: 80px;
+          width: auto; }
+        .client-container .client-area .client-icon-area .item img:hover {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
 
 .request-quote-container {
   text-align: center;
