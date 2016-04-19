@@ -48,11 +48,11 @@
 			</div>
 			<div class="copyrightContainer"> ClickShift &copy; 2015; All Rights Reserved.</div>
 		</div>
-		
-	    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 
 </html>
-

@@ -10,7 +10,7 @@
 				<div class="textArea">
 					<h2>Earthware Skincare</h2>
 					<p>
-						<h1>Earthware</h1> skin care is a small irish business
+						<span>Earthware skin</span> care is a small irish business
 						focused on the creation of toxin free
 						ethical skincare products
 					</p>

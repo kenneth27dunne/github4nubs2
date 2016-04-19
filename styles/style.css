@@ -214,6 +214,7 @@ a {
   background-color: #fff;
   padding: 50px 0;
   position: relative;
+  display: none;
   text-align: center;
   color: #fff; }
   .responsive-area-container h1 {
@@ -242,12 +243,12 @@ a {
         max-height: 150px;
         height: 100px;
         padding: 0;
-        color: #696969;
+        color: #fff;
         display: flex;
         align-items: center; }
         .responsive-area-container .responsive-content-container .responsive-mobile-section .responsive-msg-container p {
           font-size: 16px;
-          background-color: #6fe4fc;
+          background-color: #B9B9B9;
           border-radius: 8px 8px 0px 8px;
           padding: 10px 15px;
           position: relative; }
@@ -255,7 +256,7 @@ a {
             position: absolute;
             bottom: -15px;
             right: -35px;
-            fill: #6fe4fc;
+            fill: #B9B9B9;
             -moz-transform: scaleX(-1);
             -o-transform: scaleX(-1);
             -webkit-transform: scaleX(-1);
@@ -279,7 +280,7 @@ a {
         .responsive-area-container .responsive-content-container .responsive-desktop-section .responsive-msg-container p {
           font-size: 16px;
           align-self: flex-start;
-          background-color: #29b8d6;
+          background-color: #808080;
           border-radius: 8px 8px 8px 0px;
           padding: 10px 15px;
           position: relative; }
@@ -287,7 +288,7 @@ a {
           position: absolute;
           bottom: -15px;
           left: -35px;
-          fill: #29b8d6; }
+          fill: #808080; }
 
 .working-with-clickshift {
   text-align: center;
@@ -303,8 +304,9 @@ a {
     max-width: 950px;
     margin: auto; }
     .working-with-clickshift .wwc-inner-container div h2 {
-      font-family: "OpenSans-SemiBold";
-      font-weight: 100; }
+      font-family: "OpenSans-Light";
+      font-weight: 100;
+      font-size: 18px; }
     .working-with-clickshift .wwc-inner-container div img {
       width: 110px; }
     .working-with-clickshift .wwc-inner-container .consultation h2 {
@@ -317,7 +319,7 @@ a {
       color: #30d8fb; }
 
 .quote-text-area {
-  background-color: #f9f9f9;
+  background-color: #f3f3f3;
   font-size: 18px;
   color: #fff;
   padding: 20px 0 0 0;
@@ -334,7 +336,8 @@ a {
     align-items: center;
     justify-content: center;
     min-width: 100%;
-    text-align: right; }
+    text-align: right;
+    color: #696969; }
     .quote-text-area .quote-content > * {
       position: relative;
       z-index: 1; }
@@ -349,7 +352,7 @@ a {
       height: 100%;
       width: 100%;
       background-color: #000;
-      opacity: 0.2; }
+      opacity: 0.1; }
   .quote-text-area .design-title {
     color: #ff8a00;
     margin-top: 20px;
@@ -485,7 +488,7 @@ a {
         display: flex;
         -webkit-justify-content: flex-end;
         justify-content: flex-end; }
-        .request-quote-container .hompage-contact-form .contact-form-content .submit_holder input[type="submit"] {
+        .request-quote-container .hompage-contact-form .contact-form-content .submit_holder input[type="submit"], .request-quote-container .hompage-contact-form .contact-form-content .submit_holder button {
           color: #fff;
           padding: 7px 20px;
           margin: 5px 15px;
@@ -625,8 +628,7 @@ a {
   width: 100%;
   overflow: auto;
   position: relative;
-  background-color: #fff;
-  box-shadow: 0px 1px 3px #D4D2D2; }
+  background-color: #fff; }
   .nav-container2 .site-logo {
     position: relative;
     float: left;
@@ -1082,5 +1084,17 @@ a {
     width: 500px; }
     .faqContentContainer .mainContent h2 {
       margin-bottom: 20px; }
+
+.phone-num {
+  margin-right: 50px; }
+
+.socail-media-svg {
+  margin-top: 40px; }
+  .socail-media-svg a {
+    margin-right: 15px; }
+    .socail-media-svg alast-child {
+      margin-right: 0; }
+    .socail-media-svg a img {
+      width: 70px; }
 
 /*# sourceMappingURL=style.css.map */

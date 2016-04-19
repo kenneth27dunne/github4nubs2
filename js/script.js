@@ -15,16 +15,18 @@ function initialize() {
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  
+
 	var marker=new google.maps.Marker({
 	  position:myCenter,
   });
-  
+
   marker.setMap(map);
 }
 $(document).ready(function() {
+
+	$("#contact-form").validate();
 	google.maps.event.addDomListener(window, 'load', initialize);
-	
+
 	var left = $(".leftPanel");
 	left.css({ 'left': 900 });
 	left.show(200).animate({left: 0}, 950);
@@ -32,8 +34,8 @@ $(document).ready(function() {
 	var imgPanel = $(".eCommerce-service img");
 	imgPanel.css({ 'left': -900 });
 	imgPanel.show(200).animate({left: 0}, 950);
-	
-	
+
+
 	var owl = $("#owl-demo");
 
       owl.owlCarousel({
@@ -43,7 +45,7 @@ $(document).ready(function() {
       itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
       itemsTablet: [700,2], //2 items between 600 and 0;
       itemsMobile : [480, 1] // itemsMobile disabled - inherit from itemsTablet option
-      
+
       });
 
       // Custom Navigation Events
@@ -61,4 +63,4 @@ $(document).ready(function() {
       })
 
 
-    });
+  });
